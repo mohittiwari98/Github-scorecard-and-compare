@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+  --primary: #1a1a1a;
+  --light: #2c2c34;
+  --text: #ffffff;
+  --neon: #00ffff;
+  --font1: 'Lato', 'Trebuchet MS', sans-serif;
+  --font2: 'Raleway', 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font2);
+  font-size: 100%;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+/* Navbar Styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  text-align: center;
+  border-bottom: 2px solid var(--neon);
+  border-radius: 0 0 36% 36%;
+  background-color: var(--light);
+  box-shadow: 0 0 12px 2px var(--neon);
+  padding: 8px 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font1);
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.brand:hover {
+  color: var(--neon);
+}
+
+/* Theme Switcher */
+.theme {
+  max-height: 52px;
+  width: 48px;
+  position: fixed;
+  left: 0;
+  top: 25%;
+  background-color: var(--light);
+  border-radius: 0 12px 12px 0;
+  z-index: 20;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+  box-shadow: 0 0 10px var(--neon);
+}
+
+.theme:hover {
+  max-height: 220px;
+}
+.h1{
+    color:white;
+}
+.h2{
+    color: white;
+}
+
+/* Drop Icon */
+.drop-color {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin: 10px;
+  color: var(--neon);
+  text-align: center;
+}
+
+/* Color Swatches */
+.color {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin: 10px auto;
+  cursor: pointer;
+  border: 2px solid var(--text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 3px var(--neon);
+}
+
+.violet {
+  background-color: violet;
+}
+
+.yellow {
+  background-color: #ffee00;
+}
+
+.green {
+  background-color: #00ff66;
+}
+
+.blue {
+  background-color: #00c8ff;
+}

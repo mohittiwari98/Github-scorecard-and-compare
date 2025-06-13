@@ -1,0 +1,73 @@
+:root {
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+    --primary-color: #222;
+    --secondary-color: #666;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2rem 10%;
+    text-align: center;
+}
+
+.heading {
+    font-family: var(--font1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.sub-heading {
+    font-family: var(--font2);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.top-section {
+    animation: titleFadeIn 2s ease-out both;
+    transform-origin: top;
+}
+
+/* Smooth slide + fade-in effect */
+@keyframes titleFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px) scale(0.95);
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 5%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .sub-heading {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1.1rem;
+    }
+}
