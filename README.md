@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="Capture4.PNG" alt="DevOpsShack Banner">
-</div>
+</div> 
 Overview
 This project provides a tool to generate a "score" for any GitHub profile, allowing users to evaluate and compare their profiles (or others!) based on various public metrics. Whether you're a developer looking to improve your online presence, a recruiter assessing potential candidates, or just curious about how your profile stacks up, this tool offers a quantifiable way to gauge GitHub activity and influence.
 
